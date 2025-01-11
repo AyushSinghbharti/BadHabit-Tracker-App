@@ -1,5 +1,6 @@
 import React from "react";
-import FontAwesome from "@expo/vector-icons/FontAwesome";
+import Octicons from "@expo/vector-icons/Octicons";
+import { FontAwesome, Ionicons } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import { View, Text } from "react-native";
 
@@ -17,7 +18,7 @@ export default function TabLayout() {
         options={{
           title: "Tab One",
           tabBarIcon: ({ focused, color }) => (
-            <FontAwesome
+            <Octicons
               name="home"
               size={focused ? 28 : 24}
               color={focused ? "black" : color}
@@ -26,12 +27,12 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="two"
+        name="myHabits"
         options={{
-          title: "Tab Two",
+          title: "My habits",
           tabBarIcon: ({ focused, color }) => (
-            <FontAwesome
-              name="address-card-o"
+            <Ionicons
+              name="menu-outline"
               size={focused ? 28 : 24}
               color={focused ? "black" : color}
             />
